@@ -1,36 +1,32 @@
 <?php
 $pagetitle = 'Personal';
-include($_SERVER['DOCUMENT_ROOT']."/view/layout/header.php");
-?>
+include( $_SERVER[ 'DOCUMENT_ROOT' ]."/view/layout/header.php" );
+require_once( $_SERVER[ 'DOCUMENT_ROOT' ]."/inc/connect.php" );
+$user = getUser();
 
-
-
-
-
-<?php
 $cookie_name = 'loggedin';
-if (isset($_COOKIE[$cookie_name])) {
-  $cookie_value = $_COOKIE[$cookie_name];
-  echo "Welcome to your personal area!<br>";
-  echo '<a href="http://doshdata.com/model/logout.php">Logout</a>';
+if ( isset( $_COOKIE[ $cookie_name ] ) ) {
+  $cookie_value = $_COOKIE[ $cookie_name ];
 } else {
+
   echo "You are not logged in.";
 }
 ?>
 
 <?php
-require_once($_SERVER['DOCUMENT_ROOT']."/inc/connect.php");
-if(isset($_COOKIE['loggedin'])){
-  $email = $_COOKIE['loggedin'];
-  $sql = "SELECT username FROM users WHERE email=$email";
-  $username = mysqli_query($conn, $sql);
-  echo "<br><p>Welcome " . $username . "!";
+
+
+
+?>
+
+
+<?php
+if ( isset( $user[ 'username' ] ) ) {
+  echo "<h2 class='col-lg-6 col-lg-offset-2'>Welcome, " . $user[ 'username' ] . "!</h2>";
 }
 ?>
 
 
-
-
 <?php
-include($_SERVER['DOCUMENT_ROOT']."/view/layout/footer.php");
+include( $_SERVER[ 'DOCUMENT_ROOT' ]."/view/layout/footer.php" );
 ?>

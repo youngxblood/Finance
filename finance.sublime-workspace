@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"User",
+				"Username\t(logreg.php)"
+			],
+			[
+				"mysql",
+				"mysqli_fetch_assoc($sql"
+			],
+			[
+				"my",
+				"mysqli_query\t(logreg.php)"
+			],
+			[
+				"mysqli_fe",
+				"mysqli_fetch_assoc"
+			],
+			[
+				"bac",
+				"background-color\t(style.css)"
+			],
+			[
+				"di",
+				"die\t(logreg.php)"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
 				"mysqli_",
 				"mysqli_query"
 			],
@@ -209,9 +237,13 @@
 	"command_palette":
 	{
 		"height": 357.0,
-		"last_filter": "bra",
+		"last_filter": "push",
 		"selected_items":
 		[
+			[
+				"push",
+				"git: push"
+			],
 			[
 				"bra",
 				"git: branch"
@@ -231,10 +263,6 @@
 			[
 				"pull",
 				"Git: Pull"
-			],
-			[
-				"push",
-				"git: push"
 			],
 			[
 				"bran",
@@ -354,6 +382,21 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/Finance/view/layout/header.php",
+		"/C/xampp/htdocs/Finance/css/styles.css",
+		"/C/xampp/htdocs/Finance/view/layout/footer.php",
+		"/C/xampp/htdocs/Finance/view/login.php",
+		"/C/xampp/htdocs/Finance/view/register.php",
+		"/C/xampp/htdocs/Finance/css/style.css",
+		"/C/xampp/htdocs/Finance/view/personal.php",
+		"/C/xampp/htdocs/Finance/index.php",
+		"/C/xampp/htdocs/Finance/model/logreg.php",
+		"/C/xampp/htdocs/Finance/inc/init.php",
+		"/C/xampp/htdocs/Finance/home.php",
+		"/C/xampp/htdocs/Finance/model/logout.php",
+		"/C/xampp/htdocs/Finance/personal.php",
+		"/C/xampp/htdocs/Finance/logreg.php",
+		"/C/xampp/htdocs/Finance/inc/header.php",
 		"/C/xampp/htdocs/bootstrap-3.3.7/docs/examples/navbar-fixed-top/navbar-fixed-top.css",
 		"/C/xampp/htdocs/jumbotron/jumbotron.css",
 		"/C/Users/Mark/AppData/Local/Temp/Rar$DRa0.301/bootstrap-3.3.7/docs/examples/navbar/index.html",
@@ -442,7 +485,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 48.0
 	},
 	"find_in_files":
 	{
@@ -460,6 +503,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"you are not log",
 			"about",
 			"if",
 			"if (model",
@@ -618,25 +662,35 @@
 			"hide_conflict": false,
 			"restore_index":
 			{
-				"17":
+				"132":
 				{
 					"group": 0,
-					"index": 0
+					"index": 4
 				},
-				"19":
+				"138":
 				{
 					"group": 0,
 					"index": 1
 				},
-				"22":
+				"160":
 				{
 					"group": 0,
 					"index": 2
 				},
-				"23":
+				"221":
 				{
 					"group": 0,
 					"index": 3
+				},
+				"240":
+				{
+					"group": 0,
+					"index": 5
+				},
+				"93":
+				{
+					"group": 0,
+					"index": 0
 				}
 			},
 			"restore_layout":

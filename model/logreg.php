@@ -30,7 +30,7 @@ if (isset($_POST['login'])) {
 
   if ($count == 1) {
     $cookie_value = $email;
-    setcookie($cookie_name, $cookie_value, time() + (180), "/");
+    setcookie($cookie_name, $cookie_value, time() + (300), "/");
     header('Location: http://doshdata.com/view/personal.php' );
   } else {
     echo "Username or password is incorrect.";
@@ -45,7 +45,7 @@ else if (isset($_POST['register'])) {
   $email = mysqli_real_escape_string($conn, $_POST['email']);
   $phash = sha1(sha1($pass.'salt').'salt');
 
-  $sql = "SELECT * FROM users WHERE email='$email'";
+  $sql = "SELECT username FROM users WHERE email='$email'";
   $result = mysqli_query($conn, $sql);
   $count = mysqli_num_rows($result);
 
