@@ -1,31 +1,28 @@
 <?php
-
+$pagetitle = 'Home';
 include 'inc/init.php';
-require_once SITE_ROOT . 'INC' .DS. 'header.php';
+include($_SERVER['DOCUMENT_ROOT']."/view/layout/header.php");
 ?>
 
+
+
 <div class="container">
-
-  <form action="logreg.php" method="post" accept-charset="utf-8">
-      <label>Email: </label><input type="Email" name="email"><br>
-    <label>Username: </label><input type="text" name="username"><br>
-    <label>Password: </label><input type="Password" name="password"><br>
-
-    <input type="submit" name="login" value="Login">
-    <input type="submit" name="register" value="Register">
-  </form>
-
-<?php echo($_SERVER['DOCUMENT_ROOT'] . '/finance/css/bootstrap.css'); ?>
-
-
-
+  <div class="col-lg-8">
+    <p>Welcome to the main page!</p>
+  </div>
 </div>
 
+<?php
+if(isset($_COOKIE['cookie'])){
+    $cookie = $_COOKIE['cookie'];
+    echo $cookie;
+}
+?>
 
 
 
 
 
 <?php
-require_once SITE_ROOT . 'INC' .DS. 'footer.php';
+include($_SERVER['DOCUMENT_ROOT']."/view/layout/footer.php");
 ?>

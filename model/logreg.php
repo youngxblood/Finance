@@ -7,11 +7,6 @@ $username = 'root';
 $password = '';
 $database = 'finance';
 
-function sanitize ($input) {
-
-}
-
-
 
 
 $conn = mysqli_connect($servername, $username, $password, $database);
@@ -23,7 +18,7 @@ if (!$conn) {
 
 if (isset($_POST['login'])) {
 
-  $user = mysqli_real_escape_string($conn, $_POST['username']);
+  // $user = mysqli_real_escape_string($conn, $_POST['username']);
   $pass = mysqli_real_escape_string($conn, $_POST['password']);
   $email = mysqli_real_escape_string($conn, $_POST['email']);
   $phash = sha1(sha1($pass.'salt').'salt');
@@ -34,9 +29,9 @@ if (isset($_POST['login'])) {
   $count = mysqli_num_rows($result);
 
   if ($count == 1) {
-    $cookie_value = $user;
+    $cookie_value = $email;
     setcookie($cookie_name, $cookie_value, time() + (180), "/");
-    header('Location: personal.php' );
+    header('Location: http://doshdata.com/view/personal.php' );
   } else {
     echo "Username or password is incorrect.";
   }
