@@ -24,7 +24,7 @@
 
 
           <?php
-          if (!isset($_COOKIE['loggedin'])) {
+          if ( !isset( $_COOKIE[ 'loggedin' ] ) ) {
 
             echo '<li><a href="' . 'http://doshdata.com/view/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';
           } else {
@@ -35,5 +35,5 @@
       </div>
     </nav>
 
-    <div class="fixed-login">Login</div>
-    <div class="fixed-register">Register</div>
+<!--     <div class="fixed-login">Login</div>
+  <div class="fixed-register">Register</div> -->

@@ -14,6 +14,9 @@ include( $_SERVER[ 'DOCUMENT_ROOT' ]."/view/layout/header.php" );
     </form>
 
   </div>
+      <div class="col-lg-6 col-lg-offset-3 alert-danger">
+        <h3 class="center-text">Username or password do not match.</h3>
+    </div>
 </div>
 
 <?php

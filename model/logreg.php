@@ -4,7 +4,7 @@ $cookie_name = "loggedin";
 $error = false;
 require_once( $_SERVER[ 'DOCUMENT_ROOT' ]."/inc/connect.php" ); //DB connection
 
-
+// Login model
 if ( isset( $_POST[ 'login' ] ) ) {
 
   $pass = mysqli_real_escape_string( $conn, $_POST[ 'password' ] );
@@ -18,19 +18,20 @@ if ( isset( $_POST[ 'login' ] ) ) {
 
   if ( $count == 1 ) {
     $cookie_value = $email;
-    setcookie($cookie_name, $cookie_value, time() + (300), "/");
+    setcookie($cookie_name, $cookie_value, time() + (900), "/");
     header('Location: http://doshdata.com/view/personal.php' );
   } else {
-    echo "Username or password is incorrect.";
+    header('Location: http://doshdata.com/view/loginfailed.php');
   }
 
 }
 
+// Register model
 else if ( isset( $_POST[ 'register' ] ) ) {
 
   $user = mysqli_real_escape_string( $conn, $_POST[ 'username' ] );
-  $pass = mysqli_real_escape_string($conn, $_POST[ 'password' ] );
-  $email = mysqli_real_escape_string($conn, $_POST[ 'email' ] );
+  $pass = mysqli_real_escape_string( $conn, $_POST[ 'password' ] );
+  $email = mysqli_real_escape_string( $conn, $_POST[ 'email' ] );
   $phash = sha1(sha1($pass.'salt').'salt');
 
   $sql = "SELECT username FROM users WHERE email='$email'";
@@ -39,13 +40,16 @@ else if ( isset( $_POST[ 'register' ] ) ) {
 
   if ( $count == 1 ) {
     echo "This email is currently in use.";
-    $error = true;
+    $error = true; // Potentially redundant due to the page redirect
+    header( 'Location: http://doshdata.com/view/registerfailed.php' );
   }
 
 
   if ( $error == false ) {
-    $sql = "INSERT INTO users (id, username, password, email) VALUES ('', '$user', '$phash', '$email');";
-
-  $result = mysqli_query( $conn, $sql );
-}
+    $sql = "INSERT INTO users ( id, username, password, email ) VALUES ( '', '$user', '$phash', '$email' );";
+    $result = mysqli_query( $conn, $sql );
+    $cookie_value = $email;
+    setcookie($cookie_name, $cookie_value, time() + ( 900 ), "/");
+    header( 'Location: http://doshdata.com/view/personal.php' );
+  }
 }

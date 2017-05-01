@@ -1,6 +1,6 @@
 <?php
 $pagetitle = 'View Finances';
-include($_SERVER['DOCUMENT_ROOT']."/view/layout/header.php");
+include($_SERVER[ 'DOCUMENT_ROOT' ]."/view/layout/header.php" );
 ?>
 
 
@@ -12,10 +12,10 @@ include($_SERVER['DOCUMENT_ROOT']."/view/layout/header.php");
 
   <?php
 
-    if (!isset($_COOKIE['loggedin'])) {
+    if ( !isset( $_COOKIE[ 'loggedin' ] ) ) {
       echo '<p>Please log in to see the your personal financial contents.</p>';
     } else {
-      echo $_COOKIE['loggedin'];
+      echo $_COOKIE[ 'loggedin' ];
     }
 
   ?>
@@ -29,5 +29,5 @@ include($_SERVER['DOCUMENT_ROOT']."/view/layout/header.php");
 
 
 <?php
-include($_SERVER['DOCUMENT_ROOT']."/view/layout/footer.php");
+include( $_SERVER[ 'DOCUMENT_ROOT' ]."/view/layout/footer.php" );
 ?>

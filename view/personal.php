@@ -1,4 +1,5 @@
 <?php
+
 $pagetitle = 'Personal';
 include( $_SERVER[ 'DOCUMENT_ROOT' ]."/view/layout/header.php" );
 require_once( $_SERVER[ 'DOCUMENT_ROOT' ]."/inc/connect.php" );

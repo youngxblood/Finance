@@ -1,7 +1,7 @@
 <?php
 $pagetitle = 'Home';
 include 'inc/init.php';
-include($_SERVER['DOCUMENT_ROOT']."/view/layout/header.php");
+include( $_SERVER[ 'DOCUMENT_ROOT' ]."/view/layout/header.php" );
 ?>
 
 
@@ -13,8 +13,8 @@ include($_SERVER['DOCUMENT_ROOT']."/view/layout/header.php");
 </div>
 
 <?php
-if(isset($_COOKIE['cookie'])){
-  $cookie = $_COOKIE['cookie'];
+if( isset($_COOKIE[ 'cookie' ] ) ) {
+  $cookie = $_COOKIE[ 'cookie' ];
   echo $cookie;
 }
 ?>
@@ -41,5 +41,5 @@ if(isset($_COOKIE['cookie'])){
 
 
 <?php
-include($_SERVER['DOCUMENT_ROOT']."/view/layout/footer.php");
+include( $_SERVER[ 'DOCUMENT_ROOT' ]."/view/layout/footer.php" );
 ?>

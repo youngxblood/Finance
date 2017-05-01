@@ -3,13 +3,6 @@ $pagetitle = 'Register';
 include( $_SERVER[ 'DOCUMENT_ROOT' ]."/view/layout/header.php" );
 ?>
 
-
-
-
-
-
-
-
 <div class="container">
     <div class="col-lg-6 col-lg-offset-2 back">
         <h2>Enter your registration information below:</h2>
@@ -20,26 +13,9 @@ include( $_SERVER[ 'DOCUMENT_ROOT' ]."/view/layout/header.php" );
           <input class="btn btn-success all-pad5" id="all-pad5" type="submit" name="register" value="Register">
       </form>
   </div>
+  <div class="col-lg-6 col-lg-offset-3 alert-danger">
+  <h3 class="center-text">Email is already in use.</h3>
+</div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php
-include($_SERVER['DOCUMENT_ROOT']."/view/layout/footer.php");
-?>
+<?php include( $_SERVER[ 'DOCUMENT_ROOT' ]."/view/layout/footer.php" ); ?>
