@@ -1,5 +1,5 @@
 .pd-a-half {
-    margin: .1em;
+  margin: .1em;
 }
 
 .btn-xl {
@@ -11,4 +11,88 @@
 
 #all-pad5 {
   padding: 10px 15px;
+}
+
+header {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 15px;
+  background: linear-gradient(to right, #e67e22, #f1c40f);
+  z-index: 1;
+  border-bottom: solid 1px black;
+}
+
+.main-header {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 6em;
+  font-weight: 900;
+  line-height: 0.7em;
+  color: white;
+  display: inline-block;
+  position: relative;
+  left: 1.2em;
+  top: 0.5em;
+  padding: 15px;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  background-color: #262626;
+  box-shadow: 5px 5px 10px #707070;
+  border: 4px solid #944dff;
+}
+
+.nav-color {
+  background-color: aliceblue;
+  border-bottom: solid 1px black;
+
+}
+
+.footer-color {
+  background-color: #ecf0f1;
+  border-radius: 20%;
+  font-size: 1.1em;
+  display: block;
+  text-align: center;
+}
+
+.black-text {
+  color: black;
+}
+
+.navbar-brand {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.navbar-nav {
+  font-size: 1.6em;
+}
+
+.fixed-login {
+  padding: 25px;
+  position: fixed;
+  width: 80px;
+  top: 340px;
+  right: 0px;
+  color: black;
+  font-weight: 600;
+  background-color: aliceblue;
+  border: solid 2px darkgray;
+  box-shadow: 2px 2px 10px #707070;
+  text-align: center;
+}
+
+.fixed-register {
+  padding: 25px;
+  position: fixed;
+  width: 80px;
+  top: 430px;
+  right: 0px;
+  color: black;
+  font-weight: 600;
+  background-color: aliceblue;
+  border: solid 2px darkgray;
+  box-shadow: 2px 2px 10px #707070;
+  text-align: center;
 }

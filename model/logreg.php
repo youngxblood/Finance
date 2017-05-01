@@ -1,34 +1,22 @@
 <?php
-
+// Variables
 $cookie_name = "loggedin";
 $error = false;
-$servername = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'finance';
+require_once( $_SERVER[ 'DOCUMENT_ROOT' ]."/inc/connect.php" ); //DB connection
 
 
+if ( isset( $_POST[ 'login' ] ) ) {
 
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-if (!$conn) {
-  die("Database connection failed!: ".mysqli_connect_error());
-}
-
-
-if (isset($_POST['login'])) {
-
-  // $user = mysqli_real_escape_string($conn, $_POST['username']);
-  $pass = mysqli_real_escape_string($conn, $_POST['password']);
-  $email = mysqli_real_escape_string($conn, $_POST['email']);
+  $pass = mysqli_real_escape_string( $conn, $_POST[ 'password' ] );
+  $email = mysqli_real_escape_string( $conn, $_POST[ 'email' ] );
   $phash = sha1(sha1($pass.'salt').'salt');
 
   $sql = "SELECT * FROM users WHERE email='$email' AND password='$phash';";
 
-  $result = mysqli_query($conn, $sql);
-  $count = mysqli_num_rows($result);
+  $result = mysqli_query( $conn, $sql );
+  $count = mysqli_num_rows( $result );
 
-  if ($count == 1) {
+  if ( $count == 1 ) {
     $cookie_value = $email;
     setcookie($cookie_name, $cookie_value, time() + (300), "/");
     header('Location: http://doshdata.com/view/personal.php' );
@@ -38,16 +26,16 @@ if (isset($_POST['login'])) {
 
 }
 
-else if (isset($_POST['register'])) {
+else if ( isset( $_POST[ 'register' ] ) ) {
 
-  $user = mysqli_real_escape_string($conn, $_POST['username']);
-  $pass = mysqli_real_escape_string($conn, $_POST['password']);
-  $email = mysqli_real_escape_string($conn, $_POST['email']);
+  $user = mysqli_real_escape_string( $conn, $_POST[ 'username' ] );
+  $pass = mysqli_real_escape_string($conn, $_POST[ 'password' ] );
+  $email = mysqli_real_escape_string($conn, $_POST[ 'email' ] );
   $phash = sha1(sha1($pass.'salt').'salt');
 
   $sql = "SELECT username FROM users WHERE email='$email'";
-  $result = mysqli_query($conn, $sql);
-  $count = mysqli_num_rows($result);
+  $result = mysqli_query( $conn, $sql );
+  $count = mysqli_num_rows( $result );
 
   if ( $count == 1 ) {
     echo "This email is currently in use.";
@@ -55,9 +43,9 @@ else if (isset($_POST['register'])) {
   }
 
 
-  if ($error == false) {
+  if ( $error == false ) {
     $sql = "INSERT INTO users (id, username, password, email) VALUES ('', '$user', '$phash', '$email');";
 
-  $result = mysqli_query($conn, $sql);
+  $result = mysqli_query( $conn, $sql );
 }
 }
