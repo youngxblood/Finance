@@ -34,6 +34,10 @@
         </ul>
       </div>
     </nav>
+    <div class="container">
+      <div class="img-shard">test</div>
+    </div>
+
 
 <!--     <div class="fixed-login">Login</div>
   <div class="fixed-register">Register</div> -->

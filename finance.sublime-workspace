@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-align"
+			],
+			[
+				"con",
+				"container\t(login.php)"
+			],
+			[
+				"fixed",
+				"fixed-login\t(styles.css)"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"foo",
+				"footer-color\t(styles.css)"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
 				"User",
 				"Username\t(logreg.php)"
 			],
@@ -188,10 +224,6 @@
 				"include〔keyword〕"
 			],
 			[
-				"text",
-				"text-decoration"
-			],
-			[
 				"incl",
 				"include"
 			],
@@ -237,16 +269,24 @@
 	"command_palette":
 	{
 		"height": 357.0,
-		"last_filter": "push",
+		"last_filter": "bra",
 		"selected_items":
 		[
 			[
-				"push",
+				"bra",
+				"git: branch"
+			],
+			[
+				"pus",
 				"git: push"
 			],
 			[
-				"bra",
+				"br",
 				"git: branch"
+			],
+			[
+				"push",
+				"git: push"
 			],
 			[
 				"place",
@@ -275,10 +315,6 @@
 			[
 				"pack",
 				"Package Control: Install Package"
-			],
-			[
-				"br",
-				"git: branch"
 			],
 			[
 				"gutter",
@@ -576,11 +612,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":

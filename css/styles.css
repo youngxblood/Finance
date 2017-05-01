@@ -95,8 +95,19 @@ header {
   border: solid 2px darkgray;
   box-shadow: 2px 2px 10px #707070;
   text-align: center;
-}*/
+  }*/
 
-.center-text {
-  text-align: center;
-}
+  .center-text {
+    text-align: center;
+  }
+
+  .img-shard {
+    /*      background-image: url("http://doshdata.com/img/shard.png");*/
+    background-image: url(/img/shard.png);
+    background-position: center;
+  }
+
+/*  body {
+    background-image: url(/img/shard.png);
+  }*/
+
