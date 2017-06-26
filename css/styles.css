@@ -32,7 +32,7 @@ header {
   color: white;
   display: inline-block;
   position: relative;
-  left: 1.2em;
+  left: em;
   top: 0.5em;
   padding: 15px;
   text-transform: uppercase;
@@ -50,7 +50,6 @@ header {
 
 .footer-color {
   background-color: #ecf0f1;
-  border-radius: 20%;
   font-size: 1.1em;
   display: block;
   text-align: center;
@@ -104,10 +103,15 @@ header {
   .img-shard {
     /*      background-image: url("http://doshdata.com/img/shard.png");*/
     background-image: url(/img/shard.png);
+    width: 100px;
+    height: 100px;
     background-position: center;
+    background-repeat: no-repeat;
   }
 
-/*  body {
-    background-image: url(/img/shard.png);
-  }*/
+  .header-main {
+    height: 350px;
+    width: 100%;
+    background: linear-gradient(#99ccff, #cc33ff);
+  }
 

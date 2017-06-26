@@ -4,40 +4,24 @@
 		"selected_items":
 		[
 			[
-				"text",
-				"text-align"
+				"no",
+				"no-repeat"
 			],
 			[
-				"con",
-				"container\t(login.php)"
-			],
-			[
-				"fixed",
-				"fixed-login\t(styles.css)"
+				"bac",
+				"background-repeat"
 			],
 			[
 				"hei",
 				"height"
 			],
 			[
-				"border-r",
-				"border-radius"
+				"cent",
+				"center-text\t(styles.css)"
 			],
 			[
-				"wid",
-				"width"
-			],
-			[
-				"dis",
-				"display"
-			],
-			[
-				"foo",
-				"footer-color\t(styles.css)"
-			],
-			[
-				"back",
-				"background-color"
+				"di",
+				"div\tTag"
 			],
 			[
 				"User",
@@ -54,14 +38,6 @@
 			[
 				"mysqli_fe",
 				"mysqli_fetch_assoc"
-			],
-			[
-				"bac",
-				"background-color\t(style.css)"
-			],
-			[
-				"di",
-				"die\t(logreg.php)"
 			],
 			[
 				"var",
@@ -224,6 +200,10 @@
 				"include〔keyword〕"
 			],
 			[
+				"text",
+				"text-decoration"
+			],
+			[
 				"incl",
 				"include"
 			],
@@ -277,14 +257,6 @@
 				"git: branch"
 			],
 			[
-				"pus",
-				"git: push"
-			],
-			[
-				"br",
-				"git: branch"
-			],
-			[
 				"push",
 				"git: push"
 			],
@@ -315,6 +287,10 @@
 			[
 				"pack",
 				"Package Control: Install Package"
+			],
+			[
+				"br",
+				"git: branch"
 			],
 			[
 				"gutter",
@@ -418,18 +394,21 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/Finance/css/bootstrap.css",
+		"/C/xampp/htdocs/Finance/index.php",
+		"/C/xampp/htdocs/Finance/view/viewfinances.php",
+		"/C/xampp/htdocs/Finance/view/register.php",
+		"/C/xampp/htdocs/Finance/view/personal.php",
+		"/C/xampp/htdocs/Finance/view/login.php",
+		"/C/xampp/htdocs/Finance/inc/connect.php",
+		"/C/xampp/htdocs/Finance/model/logreg.php",
+		"/C/xampp/htdocs/Finance/model/logout.php",
 		"/C/xampp/htdocs/Finance/view/layout/header.php",
 		"/C/xampp/htdocs/Finance/css/styles.css",
 		"/C/xampp/htdocs/Finance/view/layout/footer.php",
-		"/C/xampp/htdocs/Finance/view/login.php",
-		"/C/xampp/htdocs/Finance/view/register.php",
 		"/C/xampp/htdocs/Finance/css/style.css",
-		"/C/xampp/htdocs/Finance/view/personal.php",
-		"/C/xampp/htdocs/Finance/index.php",
-		"/C/xampp/htdocs/Finance/model/logreg.php",
 		"/C/xampp/htdocs/Finance/inc/init.php",
 		"/C/xampp/htdocs/Finance/home.php",
-		"/C/xampp/htdocs/Finance/model/logout.php",
 		"/C/xampp/htdocs/Finance/personal.php",
 		"/C/xampp/htdocs/Finance/logreg.php",
 		"/C/xampp/htdocs/Finance/inc/header.php",
@@ -539,6 +518,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"300px",
 			"you are not log",
 			"about",
 			"if",
@@ -612,18 +592,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":

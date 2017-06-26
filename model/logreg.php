@@ -49,7 +49,7 @@ else if ( isset( $_POST[ 'register' ] ) ) {
     $sql = "INSERT INTO users ( id, username, password, email ) VALUES ( '', '$user', '$phash', '$email' );";
     $result = mysqli_query( $conn, $sql );
     $cookie_value = $email;
-    setcookie($cookie_name, $cookie_value, time() + ( 900 ), "/");
+    setcookie( $cookie_name, $cookie_value, time() + ( 900 ), "/");
     header( 'Location: http://doshdata.com/view/personal.php' );
   }
 }
