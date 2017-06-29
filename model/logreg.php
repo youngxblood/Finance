@@ -17,7 +17,13 @@ if ( isset( $_POST[ 'login' ] ) ) {
   $count = mysqli_num_rows( $result );
 
   if ( $count == 1 ) {
-    $cookie_value = $email;
+    $sql = "SELECT id
+            FROM users
+            WHERE email='$email';";
+    $result = $conn->query( $sql );
+    $id = mysqli_fetch_assoc($result);
+    $id = $id['id'];
+    $cookie_value = $id;
     setcookie($cookie_name, $cookie_value, time() + (900), "/");
     header('Location: http://doshdata.com/view/personal.php' );
   } else {
@@ -48,8 +54,11 @@ else if ( isset( $_POST[ 'register' ] ) ) {
   if ( $error == false ) {
     $sql = "INSERT INTO users ( id, username, password, email ) VALUES ( '', '$user', '$phash', '$email' );";
     $result = mysqli_query( $conn, $sql );
-    $cookie_value = $email;
+    $sql = "SELECT id FROM users WHERE email='$email';";
+    $id = mysqli_query( $conn, $sql );
+    $cookie_value = $id;
     setcookie( $cookie_name, $cookie_value, time() + ( 900 ), "/");
     header( 'Location: http://doshdata.com/view/personal.php' );
   }
 }
+

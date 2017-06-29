@@ -110,8 +110,11 @@ header {
   }
 
   .header-main {
-    height: 350px;
+    height: 300px;
     width: 100%;
     background: linear-gradient(#99ccff, #cc33ff);
   }
 
+body {
+  min-height: 120%;
+}

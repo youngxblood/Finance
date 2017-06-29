@@ -17,8 +17,8 @@ function getUser() {
   $conn =  mysqli_connect( 'localhost', 'root', '', 'finance' );
 
   if(isset( $_COOKIE[ 'loggedin' ] ) ) {
-    $email = $_COOKIE[ 'loggedin' ];
-    $sql = mysqli_query( $conn, "SELECT * FROM users WHERE email='$email'" );
+    $id = $_COOKIE[ 'loggedin' ];
+    $sql = mysqli_query( $conn, "SELECT * FROM users WHERE id='$id'" );
 
   //$user becomes an array that holds the different table data types
     $user = mysqli_fetch_assoc( $sql );

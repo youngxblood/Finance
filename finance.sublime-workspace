@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"min",
+				"min-height"
+			],
+			[
+				"req",
+				"required\tAttr"
+			],
+			[
+				"su",
+				"subType"
+			],
+			[
+				"m",
+				"mysqli_real_escape_string\t(logreg.php)"
+			],
+			[
 				"no",
 				"no-repeat"
 			],
@@ -249,16 +265,16 @@
 	"command_palette":
 	{
 		"height": 357.0,
-		"last_filter": "bra",
+		"last_filter": "push",
 		"selected_items":
 		[
 			[
-				"bra",
-				"git: branch"
-			],
-			[
 				"push",
 				"git: push"
+			],
+			[
+				"bra",
+				"git: branch"
 			],
 			[
 				"place",
@@ -394,18 +410,20 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/Finance/view/layout/footer.php",
+		"/C/xampp/htdocs/Finance/model/financeeditor.php",
+		"/C/xampp/htdocs/Finance/view/editfinances.php",
+		"/C/xampp/htdocs/Finance/model/logreg.php",
+		"/C/xampp/htdocs/Finance/view/layout/header.php",
+		"/C/xampp/htdocs/Finance/view/login.php",
+		"/C/xampp/htdocs/Finance/css/styles.css",
 		"/C/xampp/htdocs/Finance/css/bootstrap.css",
 		"/C/xampp/htdocs/Finance/index.php",
 		"/C/xampp/htdocs/Finance/view/viewfinances.php",
 		"/C/xampp/htdocs/Finance/view/register.php",
 		"/C/xampp/htdocs/Finance/view/personal.php",
-		"/C/xampp/htdocs/Finance/view/login.php",
 		"/C/xampp/htdocs/Finance/inc/connect.php",
-		"/C/xampp/htdocs/Finance/model/logreg.php",
 		"/C/xampp/htdocs/Finance/model/logout.php",
-		"/C/xampp/htdocs/Finance/view/layout/header.php",
-		"/C/xampp/htdocs/Finance/css/styles.css",
-		"/C/xampp/htdocs/Finance/view/layout/footer.php",
 		"/C/xampp/htdocs/Finance/css/style.css",
 		"/C/xampp/htdocs/Finance/inc/init.php",
 		"/C/xampp/htdocs/Finance/home.php",
@@ -518,6 +536,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"body",
+			"offset",
 			"300px",
 			"you are not log",
 			"about",

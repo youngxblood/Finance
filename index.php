@@ -2,6 +2,11 @@
 $pagetitle = 'Home';
 include 'inc/init.php';
 include( $_SERVER[ 'DOCUMENT_ROOT' ]."/view/layout/header.php" );
+
+if ( isset( $_COOKIE['loggedin'] ) )
+{
+  header("Location: Location: http://doshdata.com/view/personal.php");
+}
 ?>
 
 
